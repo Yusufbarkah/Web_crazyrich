@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GosNews - Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Go-Logo_Yellow.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#" id="current-date"></a>
+                        </li>
+                        
+                        <script>
+                            // Fungsi untuk menampilkan tanggal dalam format "Hari, DD MMMM YYYY"
+                            function formatDate(date) {
+                                const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+                                const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", 
+                                                "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                        
+                                const dayName = days[date.getDay()];
+                                const day = date.getDate();
+                                const month = months[date.getMonth()];
+                                const year = date.getFullYear();
+                        
+                                return `${dayName}, ${day} ${month} ${year}`;
+                            }
+                        
+                            // Set tanggal otomatis
+                            document.getElementById("current-date").textContent = formatDate(new Date());
+                        </script>
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Advertise</a>
+                        </li>
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="http://wa.me/6285720858032" target="_blank"><small class="fab fa-whatsapp"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="Https://fb.me/yusufbarkah.24" target="_blank" target="_blank"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.tiktok.com/@_yusufbkr?_t=8rlqQzNo3U2&_r=1" target="_blank"><small class="fab fa-tiktok"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.instagram.com/yysfbkr/profilecard/?igsh=ZTM0OXcxaGtkZmI0" target="_blank"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://open.spotify.com/user/31db7ew6gnrnmsiyz2arclgyz37e?si=k0OyaRqzQ2WIKtWYAJNh-w" target="_blank"><small class="fab fa-spotify"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.youtube.com/@BKR24" target="_blank"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">GOSSIP<span class="text-secondary font-weight-normal">NEWS</span></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html " class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Biz<span class="text-white font-weight-normal">News</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
+                    <a href="category.html" class="nav-item nav-link">Berita</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Galery</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tentang</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Berita Terbaru</a>
+                            <a href="#" class="dropdown-item">Berita Popular</a>
+                            <a href="#" class="dropdown-item">Berita Crazy Rich</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Register</a>
+                </div>
+                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-0" placeholder="Cari Dokumentasi Poto">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid mt-5 mb-3 pt-3">
+        <div class="container">
+            <div class="row gallery g-4">
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <a href="img/Dokumen1.jfif" target="_blank">
+                        <img src="img/Dokumen1.jfif" class="img-fluid rounded" alt="Gallery Image 1">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <a href="img/Dokumen2.jfif" target="_blank">
+                        <img src="img/Dokumen2.jfif" class="img-fluid rounded" alt="Gallery Image 2">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <a href="img/Dokumen3.jfif" target="_blank">
+                        <img src="img/Dokumen3.jfif" class="img-fluid rounded" alt="Gallery Image 3">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item text-center">
+                    <a href="img/Dokumen4.jfif" target="_blank" class="text-decoration-none">
+                        <p class="fw-bold mb-0">Dokumentasi Mengerjakan</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item text-center">
+                    <a href="img/Dokumen5.jfif" target="_blank" class="text-decoration-none">
+                        <p class="fw-bold mb-0">Dokumentasi Codingan</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item text-center">
+                    <a href="img/Dokumen6.jfif" target="_blank" class="text-decoration-none">
+                        <p class="fw-bold mb-0">Dokumentasi Codingan Pusing</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Gallery End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">GossipNews</a>. All Rights Reserved. 
+        Design by <a href="https://htmlcodex.com">HTML Codex</a><br>
+        Distributed by <a href="https://themewagon.com">ThemeWagon</a></p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top">< i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

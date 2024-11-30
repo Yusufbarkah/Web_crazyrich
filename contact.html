@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GosNews - Register</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Go-Logo_Yellow.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#" id="current-date"></a>
+                        </li>
+                        
+                        <script>
+                            // Fungsi untuk menampilkan tanggal dalam format "Hari, DD MMMM YYYY"
+                            function formatDate(date) {
+                                const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+                                const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", 
+                                                "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                        
+                                const dayName = days[date.getDay()];
+                                const day = date.getDate();
+                                const month = months[date.getMonth()];
+                                const year = date.getFullYear();
+                        
+                                return `${dayName}, ${day} ${month} ${year}`;
+                            }
+                        
+                            // Set tanggal otomatis
+                            document.getElementById("current-date").textContent = formatDate(new Date());
+                        </script>
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Advertise</a>
+                        </li>
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="http://wa.me/6285720858032" target="_blank"><small class="fab fa-whatsapp"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="Https://fb.me/yusufbarkah.24" target="_blank" target="_blank"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.tiktok.com/@_yusufbkr?_t=8rlqQzNo3U2&_r=1" target="_blank"><small class="fab fa-tiktok"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.instagram.com/yysfbkr/profilecard/?igsh=ZTM0OXcxaGtkZmI0" target="_blank"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://open.spotify.com/user/31db7ew6gnrnmsiyz2arclgyz37e?si=k0OyaRqzQ2WIKtWYAJNh-w" target="_blank"><small class="fab fa-spotify"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.youtube.com/@BKR24" target="_blank"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">GOSSIP<span class="text-secondary font-weight-normal">NEWS</span></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">GOSSIP<span class="text-white font-weight-normal">NEWS</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Dashboard</a>
+                    <a href="category.html" class="nav-item nav-link">Berita</a>
+                    <a href="single.html" class="nav-item nav-link">Galery</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tentang</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Berita Terbaru</a>
+                            <a href="#" class="dropdown-item">Berita Popular</a>
+                            <a href="#" class="dropdown-item">Berita Crazy Rich</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link active">Register</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Register Start -->
+    <div class="container-fluid mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-title mb-4">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Register Your Account</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-4">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Full Name" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control p-4" placeholder="Email" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Username" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control p-4" placeholder="Password" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control p-4" placeholder="Confirm Password" required />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
+                                    type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">GossipNews</a>. All Rights Reserved. 
+		
+		<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+		Design by <a href="https://htmlcodex.com">HTML Codex</a><br>
+        Distributed by <a href="https://themewagon.com">ThemeWagon</a></p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
